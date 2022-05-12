@@ -10,6 +10,7 @@ server.get('/', (req, res) => {
 server.get('/api/users', (req, res) => {
     Users.get()
     .then(result => {
+        console.log(result)
         res.json(result);
     })
 })
